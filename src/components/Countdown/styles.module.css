@@ -53,6 +53,27 @@
 transition: background-color 0.2s;
 }
 
-.countButton:hover {
+.countButton:not(:disabled):hover {
     background: var(--blue-dark);
+}
+
+.countButton:disabled {
+    background: var(--white);
+    color: var(--text);
+    cursor: not-allowed;
+}
+
+.countButtonActive {
+    background: var(--white);
+    color: var(--title);
+}
+
+
+.countButtonActive:hover {
+    background: var(--red);
+    color: var(--white);
+}
+
+.countButtonDisabled {
+
 }
